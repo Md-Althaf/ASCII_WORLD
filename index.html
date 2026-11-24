@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ASCII Studio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>ASCII STUDIO<span>.</span></h1>
+        <p>EVERY PIXEL HAS A CHARACTER.</p>
+    </header>
+
+    <main>
+
+        <nav>
+            <button id="cameraBtn">CAMERA</button>
+            <button id="uploadBtn" class="active">IMAGE</button>
+        </nav>
+
+        <section class="camera-area" id="cameraArea">
+
+            <div class="section-title">
+                <span>CAMERA</span>
+                <span id="cameraStatus">OFFLINE</span>
+            </div>
+
+            <div class="camera-screen">
+                <video id="video" autoplay playsinline></video>
+
+                <div class="camera-placeholder" id="cameraPlaceholder">
+                    <span>CAMERA PREVIEW</span>
+                </div>
+            </div>
+
+            <div class="camera-controls">
+                <button id="startBtn">START</button>
+                <button id="stopBtn">STOP</button>
+            </div>
+
+        </section>
+
+
+        <section class="screen">
+
+            <div class="screen-top">
+                <span>ASCII OUTPUT</span>
+                <span id="status">READY</span>
+            </div>
+
+            <div id="asciiScreen">
+                <pre id="asciiText"> 
+       A S C I I
+
+       S T U D I O
+
+       SELECT AN IMAGE
+                </pre>
+            </div>
+
+        </section>
+
+
+        <section class="controls">
+
+            <label for="imageInput" class="upload">
+                UPLOAD IMAGE
+            </label>
+
+            <input type="file" id="imageInput" accept="image/*">
+
+            <button id="downloadBtn">DOWNLOAD</button>
+
+            <button id="clearBtn">CLEAR</button>
+
+        </section>
+
+
+        <footer>
+            <p>ASCII STUDIO — MADE OF CHARACTERS</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
