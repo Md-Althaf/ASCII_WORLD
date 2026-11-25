@@ -1,0 +1,147 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    color: white;
+    font-family: monospace;
+    padding: 15px;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+header p {
+    color: #777;
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+main {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+button, .upload {
+    background: none;
+    color: white;
+    border: 1px solid #444;
+    padding: 8px 12px;
+    font-family: monospace;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+button:hover, .upload:hover,
+button.active {
+    background: white;
+    color: black;
+}
+
+.camera-area {
+    margin-bottom: 15px;
+}
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    color: #777;
+    font-size: 11px;
+    margin-bottom: 8px;
+}
+
+.camera-screen {
+    height: 180px;
+    background: #050505;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: none;
+}
+
+.camera-placeholder {
+    color: #444;
+    font-size: 11px;
+}
+
+.camera-controls {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.screen {
+    width: 100%;
+}
+
+.screen-top {
+    display: flex;
+    justify-content: space-between;
+    color: #777;
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+
+#asciiScreen {
+    width: 100%;
+    min-height: 400px;
+    overflow: auto;
+    padding: 5px 0;
+}
+
+#asciiText {
+    color: white;
+    font-size: 8px;
+    line-height: 8px;
+    font-weight: normal;
+    white-space: pre;
+}
+
+.controls {
+    display: flex;
+    gap: 8px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.upload {
+    display: inline-block;
+}
+
+footer {
+    margin-top: 30px;
+    color: #555;
+    font-size: 10px;
+}
+
+@media (max-width: 600px) {
+    #asciiText {
+        font-size: 5px;
+        line-height: 5px;
+    }
+}

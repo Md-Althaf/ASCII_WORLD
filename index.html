@@ -17,11 +17,12 @@
     <main>
 
         <nav>
-            <button id="cameraBtn">CAMERA</button>
-            <button id="uploadBtn" class="active">IMAGE</button>
+            <button id="cameraBtn" class="active">CAMERA</button>
+            <button id="uploadBtn">IMAGE</button>
         </nav>
 
-        <section class="camera-area" id="cameraArea">
+
+        <section class="camera-area">
 
             <div class="section-title">
                 <span>CAMERA</span>
@@ -29,11 +30,13 @@
             </div>
 
             <div class="camera-screen">
-                <video id="video" autoplay playsinline></video>
+
+                <video id="video" autoplay muted playsinline></video>
 
                 <div class="camera-placeholder" id="cameraPlaceholder">
-                    <span>CAMERA PREVIEW</span>
+                    CAMERA PREVIEW
                 </div>
+
             </div>
 
             <div class="camera-controls">
@@ -52,6 +55,7 @@
             </div>
 
             <div id="asciiScreen">
+
                 <pre id="asciiText"> 
        A S C I I
 
@@ -59,6 +63,7 @@
 
        SELECT AN IMAGE
                 </pre>
+
             </div>
 
         </section>
@@ -89,3 +94,4 @@
 
 </body>
 </html>
+111
