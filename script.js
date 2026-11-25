@@ -105,7 +105,7 @@ function showCamera() {
         return;
     }
 
-    let width = 100;
+    let width = 120;
     let height = Math.round(video.videoHeight / video.videoWidth * width * 0.5);
 
     canvas.width = width;
